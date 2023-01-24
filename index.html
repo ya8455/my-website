@@ -15,7 +15,106 @@
 </head>
 
 <body>
-  <div>
+  <style>
+
+body {
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 20px;
+
+}
+
+
+
+
+#myBtn {
+
+  display: none;
+
+  position: fixed;
+
+  bottom: 20px;
+
+  right: 30px;
+
+  z-index: 99;
+
+  font-size: 18px;
+
+  border: none;
+
+  outline: none;
+
+  background-color: red;
+
+  color: white;
+
+  cursor: pointer;
+
+  padding: 15px;
+
+  border-radius: 4px;
+
+}
+
+
+
+
+#myBtn:hover {
+
+  background-color: #555;
+
+}
+
+</style>
+
+   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+
+// Get the button
+
+let mybutton = document.getElementById("myBtn");
+
+
+
+
+// When the user scrolls down 20px from the top of the document, show the button
+
+window.onscroll = function() {scrollFunction()};
+
+
+
+
+function scrollFunction() {
+
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+
+    mybutton.style.display = "block";
+
+  } else {
+
+    mybutton.style.display = "none";
+
+  }
+
+}
+
+
+
+
+// When the user clicks on the button, scroll to the top of the document
+
+function topFunction() {
+
+  document.body.scrollTop = 0;
+
+  document.documentElement.scrollTop = 0;
+
+}
+
+</script>
 <h1>
   2022 World cup </h1>
   <img src="https://i.ytimg.com/vi/EXXe-G-_lxI/maxresdefault.jpg" width="450px">
@@ -36,9 +135,7 @@
   <img src=https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D2drWExCBWGY&psig=AOvVaw2xKsr0ThzP9-imwc53qxPD&ust=1674638326938000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCIDg3ofw3_wCFQAAAAAdAAAAABA9> 
   
   
-   
-</div>
-  <a href="#" class="top">back to top</a>       
+         
 </body>
 
 </html>
